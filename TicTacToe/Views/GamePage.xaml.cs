@@ -4,9 +4,9 @@ using Xamarin.Forms;
 
 namespace TicTacToe
 {
-    public partial class AboutPage : ContentPage
+    public partial class GamePage : ContentPage
     {
-        public AboutPage()
+        public GamePage()
         {
             InitializeComponent();
         }
