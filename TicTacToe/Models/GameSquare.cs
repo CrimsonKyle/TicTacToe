@@ -5,30 +5,34 @@ namespace TicTacToe
 {
     public class GameSquare
     {
-		public int Location
-		{
+        public int Location
+        {
             get;
             set;
-		}
+        }
 
-		public string Text {
-            get {
-				switch (Player)
-				{
-					case Owner.X:
+        public string Text
+        {
+            get
+            {
+                switch (Player)
+                {
+                    case Owner.X:
                         return "X";
-					case Owner.O:
-						return "O";
-					default:
-						return "";
-				}
+                    case Owner.O:
+                        return "O";
+                    default:
+                        return "";
+                }
             }
         }
 
         public Color SquareColor { get; set; } = Color.YellowGreen;
 
-        public bool CanInteract{
-            get {
+        public bool CanInteract
+        {
+            get
+            {
                 switch (Player)
                 {
                     case Owner.X:
@@ -40,6 +44,6 @@ namespace TicTacToe
                 }
             }
         }
-		public Owner Player { get; set; } = Owner.None;
+        public Owner Player { get; set; } = Owner.None;
     }
 }

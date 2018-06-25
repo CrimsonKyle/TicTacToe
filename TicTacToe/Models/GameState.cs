@@ -24,11 +24,11 @@ namespace TicTacToe
 
         public List<GameSquare> Squares { get; set; }
 
-        public List<Move> Moves{ get; set; }
+        public List<Move> Moves { get; set; }
 
         public Owner NextMove
-		{
-			get
+        {
+            get
             {
                 if (Moves.Count() > 0)
                 {
@@ -41,61 +41,63 @@ namespace TicTacToe
                         default:
                             return Owner.X;
                     }
-                } else {
+                }
+                else
+                {
                     return Owner.X;
                 }
-			}
-		}
+            }
+        }
 
-		public string Message
-		{
-			get
-			{
-				if (GameStatus == Status.InProgress)
-				{
-					switch (NextMove)
-					{
-						case Owner.X:
-							return "X Your Move";
-						case Owner.O:
-							return "O Your Move";
-						default:
-							return "";
-					}
-				}
-				else
-				{
-					switch (GameStatus)
-					{
-						case Status.X_Wins:
-							return "X Wins";
+        public string Message
+        {
+            get
+            {
+                if (GameStatus == Status.InProgress)
+                {
+                    switch (NextMove)
+                    {
+                        case Owner.X:
+                            return "X Your Move";
+                        case Owner.O:
+                            return "O Your Move";
+                        default:
+                            return "";
+                    }
+                }
+                else
+                {
+                    switch (GameStatus)
+                    {
+                        case Status.X_Wins:
+                            return "X Wins";
                         case Status.O_Wins:
-							return "O Wins";
-						case Status.Draw:
-							return "Draw";
-						default:
-							return "";
-					}
-				}
-			}
-		}
+                            return "O Wins";
+                        case Status.Draw:
+                            return "Draw";
+                        default:
+                            return "";
+                    }
+                }
+            }
+        }
 
         public Status GameStatus { get; set; }
 
-		public void UpdateState()
-		{
+        public void UpdateState()
+        {
             foreach (GameSquare gs in Squares)
             {
-                foreach(Move m in Moves)
+                foreach (Move m in Moves)
                 {
-                    if(m.Location == gs.Location)
+                    if (m.Location == gs.Location)
                     {
                         gs.Player = m.Player;
                     }
                 }
             }
             CheckForWinner();
-		}
+        }
 
         public void CheckForWinner()
         {
@@ -105,8 +107,8 @@ namespace TicTacToe
             CheckForDraw();
         }
 
-		public void CheckForWinnerHorizontal()
-		{
+        public void CheckForWinnerHorizontal()
+        {
             if (GameStatus == Status.InProgress)
             {
                 if (Squares[0].Player == Squares[1].Player && Squares[1].Player == Squares[2].Player)
@@ -122,10 +124,10 @@ namespace TicTacToe
                     DeclareWinner(6, 7, 8);
                 }
             }
-		}
+        }
 
-		public void CheckForWinnerVertical()
-		{
+        public void CheckForWinnerVertical()
+        {
             if (GameStatus == Status.InProgress)
             {
                 if (Squares[0].Player == Squares[3].Player && Squares[3].Player == Squares[6].Player)
@@ -141,10 +143,10 @@ namespace TicTacToe
                     DeclareWinner(2, 5, 8);
                 }
             }
-		}
+        }
 
-		public void CheckForWinnerDiagonal()
-		{
+        public void CheckForWinnerDiagonal()
+        {
             if (GameStatus == Status.InProgress)
             {
                 if (Squares[0].Player == Squares[4].Player && Squares[4].Player == Squares[8].Player)
@@ -156,11 +158,12 @@ namespace TicTacToe
                     DeclareWinner(6, 4, 2);
                 }
             }
-		}
+        }
 
         public void CheckForDraw()
         {
-            if(Moves.Count() >= 9 && GameStatus == Status.InProgress) {
+            if (Moves.Count() >= 9 && GameStatus == Status.InProgress)
+            {
                 GameStatus = Status.Draw;
                 ColorDraw();
             }
@@ -168,39 +171,39 @@ namespace TicTacToe
 
         public void DeclareWinner(int square1, int square2, int square3)
         {
-			switch (Squares[square1].Player)
-			{
-				case Owner.X:
-					GameStatus = Status.X_Wins;
+            switch (Squares[square1].Player)
+            {
+                case Owner.X:
+                    GameStatus = Status.X_Wins;
                     ColorWin(square1, square2, square3);
-					break;
-				case Owner.O:
-					GameStatus = Status.O_Wins;
-					ColorWin(square1, square2, square3);
-					break;
-				default:
-					break;
-			}
+                    break;
+                case Owner.O:
+                    GameStatus = Status.O_Wins;
+                    ColorWin(square1, square2, square3);
+                    break;
+                default:
+                    break;
+            }
         }
 
-		public void ColorWin(int square1, int square2, int square3)
-		{
-			Squares[square1].SquareColor = Color.Red;
-			Squares[square2].SquareColor = Color.Red;
-			Squares[square3].SquareColor = Color.Red;
-		}
+        public void ColorWin(int square1, int square2, int square3)
+        {
+            Squares[square1].SquareColor = Color.Red;
+            Squares[square2].SquareColor = Color.Red;
+            Squares[square3].SquareColor = Color.Red;
+        }
 
-		public void ColorDraw()
-		{
-			Squares[0].SquareColor = Color.LightGray;
-			Squares[1].SquareColor = Color.LightGray;
-			Squares[2].SquareColor = Color.LightGray;
-			Squares[3].SquareColor = Color.LightGray;
-			Squares[4].SquareColor = Color.LightGray;
-			Squares[5].SquareColor = Color.LightGray;
-			Squares[6].SquareColor = Color.LightGray;
-			Squares[7].SquareColor = Color.LightGray;
+        public void ColorDraw()
+        {
+            Squares[0].SquareColor = Color.LightGray;
+            Squares[1].SquareColor = Color.LightGray;
+            Squares[2].SquareColor = Color.LightGray;
+            Squares[3].SquareColor = Color.LightGray;
+            Squares[4].SquareColor = Color.LightGray;
+            Squares[5].SquareColor = Color.LightGray;
+            Squares[6].SquareColor = Color.LightGray;
+            Squares[7].SquareColor = Color.LightGray;
             Squares[8].SquareColor = Color.LightGray;
-		}
+        }
     }
 }

@@ -9,6 +9,6 @@ namespace TicTacToe.Models
             Style = (Style)Application.Current.Resources["gameSquareStyle"];
         }
 
-		public int Location{ get; set; }
+        public int Location { get; set; }
     }
 }
