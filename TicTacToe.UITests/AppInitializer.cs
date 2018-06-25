@@ -27,7 +27,8 @@ namespace TicTacToe.UITests
                     .Android
                     // TODO: Update this path to point to your Android app and uncomment the
                     // code if the app is not included in the solution.
-                    .ApkFile ("../../../Droid/bin/Debug/TicTacToe.apk")
+                    .ApkFile ("../../../Droid/bin/Debug/com.CrimsonKyle.TicTacToe.apk")
+                    .EnableLocalScreenshots()
                     .StartApp();
             }
 

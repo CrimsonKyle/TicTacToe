@@ -1,5 +1,5 @@
-﻿<Properties StartupConfiguration="{32B01974-35D7-4E86-8AA0-8C7A10355558}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Info.plist">
+﻿<Properties StartupConfiguration="{49F041C3-DB71-4E16-A3CF-0A71AA1BCBA4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TicTacToe.UITests/AppInitializer.cs">
     <Files>
       <File FileName="iOS/obj/iPhoneSimulator/Debug/TicTacToe.iOS..Users.kmrichar.TicTacToe.TicTacToe.Views.GamePage.xaml.g.cs" Line="46" Column="1" />
       <File FileName="TicTacToe/App.xaml.cs" Line="24" Column="1" />
@@ -17,24 +17,18 @@
       <File FileName="TicTacToe/Models/Status.cs" Line="1" Column="1" />
       <File FileName="TicTacToe/Models/Move.cs" Line="1" Column="1" />
       <File FileName="TicTacToe/Models/GameButton.cs" Line="1" Column="1" />
-      <File FileName="TicTacToe.UITests/AppInitializer.cs" Line="30" Column="21" />
+      <File FileName="TicTacToe.UITests/AppInitializer.cs" Line="31" Column="46" />
       <File FileName="TicTacToe.UITests/packages.config" Line="1" Column="1" />
-      <File FileName="TicTacToe.UITests/Tests.cs" Line="40" Column="13" />
+      <File FileName="TicTacToe.UITests/Tests.cs" Line="55" Column="24" />
       <File FileName="iOS/Info.plist" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TicTacToe" expanded="True">
-            <Node name="TicTacToe" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="GamePage.xaml" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="TicTacToe.Droid" expanded="True" />
+            <Node name="TicTacToe.Droid" selected="True" />
             <Node name="TicTacToe.iOS" expanded="True">
-              <Node name="Info.plist" selected="True" />
+              <Node name="Packages" expanded="True" />
             </Node>
             <Node name="TicTacToe.UITests" expanded="True">
               <Node name="References" expanded="True">
@@ -52,8 +46,9 @@
               <Node name="TicTacToe" expanded="True">
                 <Node name="UITests" expanded="True">
                   <Node name="Tests" expanded="True">
-                    <Node name="Tests(Android)" expanded="True" />
-                    <Node name="Tests(iOS)" expanded="True" selected="True" />
+                    <Node name="Tests(Android)" expanded="True">
+                      <Node name="PlayGame" selected="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
@@ -63,7 +58,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
