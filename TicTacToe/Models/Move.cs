@@ -10,6 +10,6 @@ namespace TicTacToe
 			set;
 		}
 
-		public Owner player { get; set; } = Owner.None;
+		public Owner Player { get; set; } = Owner.None;
 	}
 }

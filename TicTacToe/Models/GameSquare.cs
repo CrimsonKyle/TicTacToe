@@ -1,4 +1,5 @@
 ﻿using System;
+using Xamarin.Forms;
 
 namespace TicTacToe
 {
@@ -12,7 +13,7 @@ namespace TicTacToe
 
 		public string Text {
             get {
-				switch (player)
+				switch (Player)
 				{
 					case Owner.X:
                         return "X";
@@ -24,9 +25,11 @@ namespace TicTacToe
             }
         }
 
+        public Color SquareColor { get; set; } = Color.YellowGreen;
+
         public bool CanInteract{
             get {
-                switch (player)
+                switch (Player)
                 {
                     case Owner.X:
                         return false;
@@ -37,6 +40,6 @@ namespace TicTacToe
                 }
             }
         }
-		public Owner player { get; set; } = Owner.None;
+		public Owner Player { get; set; } = Owner.None;
     }
 }

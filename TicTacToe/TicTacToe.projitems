@@ -20,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\GameState.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Status.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Move.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\GameButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GamePage.xaml" />
