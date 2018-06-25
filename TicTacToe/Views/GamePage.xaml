@@ -21,6 +21,6 @@
   <custom:GameButton x:Name="Square_7" Location="7" Clicked="Move" Text="7" Grid.Row="2" Grid.Column="1"/>
   <custom:GameButton x:Name="Square_8" Location="8" Clicked="Move" Text="8" Grid.Row="2" Grid.Column="2"/>
 </Grid>
-<Button Text="New Game" VerticalOptions="End" Clicked="NewGame" Style="{StaticResource gameSquareStyle}"/>
+<Button Text="New Game" VerticalOptions="End" Clicked="OnNewGameTapped" Style="{StaticResource gameSquareStyle}"/>
 </StackLayout>
 </ContentPage>

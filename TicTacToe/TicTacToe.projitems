@@ -26,4 +26,12 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\GamePage.xaml" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)ScreenShots\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)ScreenShots\NewGame.png" />
+    <None Include="$(MSBuildThisFileDirectory)ScreenShots\Draw.png" />
+    <None Include="$(MSBuildThisFileDirectory)ScreenShots\Winner.png" />
+  </ItemGroup>
 </Project>

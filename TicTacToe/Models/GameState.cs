@@ -22,12 +22,9 @@ namespace TicTacToe
             }
         }
 
-        public List<GameSquare> Squares { get; set;}
+        public List<GameSquare> Squares { get; set; }
 
-		public List<Move> Moves
-		{
-            get; set;
-		}
+        public List<Move> Moves{ get; set; }
 
         public Owner NextMove
 		{
@@ -83,10 +80,7 @@ namespace TicTacToe
 			}
 		}
 
-		public Status GameStatus
-		{
-            get; set;
-		}
+        public Status GameStatus { get; set; }
 
 		public void UpdateState()
 		{
@@ -113,32 +107,54 @@ namespace TicTacToe
 
 		public void CheckForWinnerHorizontal()
 		{
-            if(Squares[0].Player == Squares[1].Player && Squares[1].Player == Squares[2].Player) {
-				DeclareWinner(Squares[0].Player, 0, 1, 2);
-            } else if (Squares[3].Player == Squares[4].Player && Squares[4].Player == Squares[5].Player) {
-				DeclareWinner(Squares[3].Player, 3, 4, 5);
-			} else if (Squares[6].Player == Squares[7].Player && Squares[7].Player == Squares[8].Player) {
-				DeclareWinner(Squares[6].Player, 6, 7, 8);
-			}
+            if (GameStatus == Status.InProgress)
+            {
+                if (Squares[0].Player == Squares[1].Player && Squares[1].Player == Squares[2].Player)
+                {
+                    DeclareWinner(0, 1, 2);
+                }
+                else if (Squares[3].Player == Squares[4].Player && Squares[4].Player == Squares[5].Player)
+                {
+                    DeclareWinner(3, 4, 5);
+                }
+                else if (Squares[6].Player == Squares[7].Player && Squares[7].Player == Squares[8].Player)
+                {
+                    DeclareWinner(6, 7, 8);
+                }
+            }
 		}
 
 		public void CheckForWinnerVertical()
 		{
-			if (Squares[0].Player == Squares[3].Player && Squares[3].Player == Squares[6].Player) {
-				DeclareWinner(Squares[0].Player, 0, 3, 6);
-			} else if (Squares[1].Player == Squares[4].Player && Squares[4].Player == Squares[7].Player) {
-				DeclareWinner(Squares[1].Player, 1, 4, 7);
-			} else if (Squares[2].Player == Squares[5].Player && Squares[5].Player == Squares[8].Player) {
-				DeclareWinner(Squares[2].Player, 2, 5, 8);
-			}
+            if (GameStatus == Status.InProgress)
+            {
+                if (Squares[0].Player == Squares[3].Player && Squares[3].Player == Squares[6].Player)
+                {
+                    DeclareWinner(0, 3, 6);
+                }
+                else if (Squares[1].Player == Squares[4].Player && Squares[4].Player == Squares[7].Player)
+                {
+                    DeclareWinner(1, 4, 7);
+                }
+                else if (Squares[2].Player == Squares[5].Player && Squares[5].Player == Squares[8].Player)
+                {
+                    DeclareWinner(2, 5, 8);
+                }
+            }
 		}
 
 		public void CheckForWinnerDiagonal()
 		{
-            if (Squares[0].Player == Squares[4].Player && Squares[4].Player == Squares[8].Player) {
-                DeclareWinner(Squares[0].Player, 0, 4, 8);
-            } else if (Squares[6].Player == Squares[4].Player && Squares[4].Player == Squares[2].Player) {
-                DeclareWinner(Squares[6].Player, 6, 4, 2);
+            if (GameStatus == Status.InProgress)
+            {
+                if (Squares[0].Player == Squares[4].Player && Squares[4].Player == Squares[8].Player)
+                {
+                    DeclareWinner(0, 4, 8);
+                }
+                else if (Squares[6].Player == Squares[4].Player && Squares[4].Player == Squares[2].Player)
+                {
+                    DeclareWinner(6, 4, 2);
+                }
             }
 		}
 
@@ -150,9 +166,9 @@ namespace TicTacToe
             }
         }
 
-        public void DeclareWinner(Owner Player, int square1, int square2, int square3)
+        public void DeclareWinner(int square1, int square2, int square3)
         {
-			switch (Player)
+			switch (Squares[square1].Player)
 			{
 				case Owner.X:
 					GameStatus = Status.X_Wins;
