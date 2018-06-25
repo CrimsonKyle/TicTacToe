@@ -17,6 +17,8 @@ namespace TicTacToe.iOS
 
             UIApplication.SharedApplication.StatusBarHidden = true;
 
+            Xamarin.Calabash.Start();
+
             return base.FinishedLaunching(app, options);
         }
     }

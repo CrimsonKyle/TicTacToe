@@ -11,15 +11,15 @@
     <ColumnDefinition Width="*" />
     <ColumnDefinition Width="*" />
   </Grid.ColumnDefinitions>
-  <custom:GameButton x:Name="Square_0" Location="0" Clicked="Move" Text="0" Grid.Row="0" Grid.Column="0"/>
-  <custom:GameButton x:Name="Square_1" Location="1" Clicked="Move" Text="1" Grid.Row="0" Grid.Column="1"/>
-  <custom:GameButton x:Name="Square_2" Location="2" Clicked="Move" Text="2" Grid.Row="0" Grid.Column="2"/>
-  <custom:GameButton x:Name="Square_3" Location="3" Clicked="Move" Text="3" Grid.Row="1" Grid.Column="0"/>
-  <custom:GameButton x:Name="Square_4" Location="4" Clicked="Move" Text="4" Grid.Row="1" Grid.Column="1"/>
-  <custom:GameButton x:Name="Square_5" Location="5" Clicked="Move" Text="5" Grid.Row="1" Grid.Column="2"/>
-  <custom:GameButton x:Name="Square_6" Location="6" Clicked="Move" Text="6" Grid.Row="2" Grid.Column="0"/>
-  <custom:GameButton x:Name="Square_7" Location="7" Clicked="Move" Text="7" Grid.Row="2" Grid.Column="1"/>
-  <custom:GameButton x:Name="Square_8" Location="8" Clicked="Move" Text="8" Grid.Row="2" Grid.Column="2"/>
+  <custom:GameButton x:Name="Square_0" Location="0" Clicked="Move" Text="0" Grid.Row="0" Grid.Column="0" AutomationId="Square_0"/>
+  <custom:GameButton x:Name="Square_1" Location="1" Clicked="Move" Text="1" Grid.Row="0" Grid.Column="1" AutomationId="Square_1"/>
+  <custom:GameButton x:Name="Square_2" Location="2" Clicked="Move" Text="2" Grid.Row="0" Grid.Column="2" AutomationId="Square_2"/>
+  <custom:GameButton x:Name="Square_3" Location="3" Clicked="Move" Text="3" Grid.Row="1" Grid.Column="0" AutomationId="Square_3"/>
+  <custom:GameButton x:Name="Square_4" Location="4" Clicked="Move" Text="4" Grid.Row="1" Grid.Column="1" AutomationId="Square_4"/>
+  <custom:GameButton x:Name="Square_5" Location="5" Clicked="Move" Text="5" Grid.Row="1" Grid.Column="2" AutomationId="Square_5"/>
+  <custom:GameButton x:Name="Square_6" Location="6" Clicked="Move" Text="6" Grid.Row="2" Grid.Column="0" AutomationId="Square_6"/>
+  <custom:GameButton x:Name="Square_7" Location="7" Clicked="Move" Text="7" Grid.Row="2" Grid.Column="1" AutomationId="Square_7"/>
+  <custom:GameButton x:Name="Square_8" Location="8" Clicked="Move" Text="8" Grid.Row="2" Grid.Column="2" AutomationId="Square_8"/>
 </Grid>
 <Button Text="New Game" VerticalOptions="End" Clicked="OnNewGameTapped" Style="{StaticResource gameSquareStyle}"/>
 </StackLayout>

@@ -33,5 +33,8 @@
     <None Include="$(MSBuildThisFileDirectory)ScreenShots\NewGame.png" />
     <None Include="$(MSBuildThisFileDirectory)ScreenShots\Draw.png" />
     <None Include="$(MSBuildThisFileDirectory)ScreenShots\Winner.png" />
+    <None Include="$(MSBuildThisFileDirectory)ScreenShots\DroidDraw.png" />
+    <None Include="$(MSBuildThisFileDirectory)ScreenShots\DroidNewGame.png" />
+    <None Include="$(MSBuildThisFileDirectory)ScreenShots\DroidWinner.png" />
   </ItemGroup>
 </Project>
