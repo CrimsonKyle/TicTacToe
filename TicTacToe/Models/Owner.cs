@@ -1,10 +1,10 @@
 ﻿using System;
 namespace TicTacToe
 {
-	public enum Owner
-	{
-		X,
-		O,
-		None
-	};
+    public enum Owner
+    {
+        X,
+        O,
+        None
+    };
 }

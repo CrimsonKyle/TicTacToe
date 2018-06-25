@@ -2,53 +2,33 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="TicTacToe.UITests/AppInitializer.cs">
     <Files>
       <File FileName="iOS/obj/iPhoneSimulator/Debug/TicTacToe.iOS..Users.kmrichar.TicTacToe.TicTacToe.Views.GamePage.xaml.g.cs" Line="46" Column="1" />
-      <File FileName="TicTacToe/App.xaml.cs" Line="24" Column="1" />
+      <File FileName="TicTacToe/App.xaml.cs" Line="1" Column="1" />
       <File FileName="TicTacToe/Views/GamePage.xaml" Line="27" Column="1" />
       <File FileName="TicTacToe/Views/GamePage.xaml.cs" Line="1" Column="1" />
       <File FileName="TicTacToe/App.xaml" Line="19" Column="1" />
-      <File FileName="iOS/AppDelegate.cs" Line="20" Column="38" />
-      <File FileName="TicTacToe/Models/GameSquare.cs" Line="2" Column="15" />
-      <File FileName="TicTacToe/Models/Owner.cs" Line="7" Column="3" />
+      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="TicTacToe/Models/GameSquare.cs" Line="1" Column="1" />
+      <File FileName="TicTacToe/Models/Owner.cs" Line="1" Column="1" />
       <File FileName="Droid/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="iOS/Main.cs" Line="16" Column="40" />
-      <File FileName="iOS/LaunchScreen.storyboard" />
+      <File FileName="iOS/Main.cs" Line="1" Column="1" />
       <File FileName="Droid/packages.config" Line="1" Column="1" />
       <File FileName="TicTacToe/Models/GameState.cs" Line="1" Column="1" />
       <File FileName="TicTacToe/Models/Status.cs" Line="1" Column="1" />
       <File FileName="TicTacToe/Models/Move.cs" Line="1" Column="1" />
       <File FileName="TicTacToe/Models/GameButton.cs" Line="1" Column="1" />
-      <File FileName="TicTacToe.UITests/AppInitializer.cs" Line="31" Column="46" />
+      <File FileName="TicTacToe.UITests/AppInitializer.cs" Line="1" Column="1" />
       <File FileName="TicTacToe.UITests/packages.config" Line="1" Column="1" />
-      <File FileName="TicTacToe.UITests/Tests.cs" Line="55" Column="24" />
-      <File FileName="iOS/Info.plist" />
+      <File FileName="TicTacToe.UITests/Tests.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TicTacToe" expanded="True">
-            <Node name="TicTacToe.iOS" expanded="True" />
-            <Node name="TicTacToe.UITests" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="AppInitializer.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="TicTacToe" expanded="True" selected="True" />
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="TicTacToe" expanded="True">
-            <Node name="TicTacToe.UITests" expanded="True">
-              <Node name="TicTacToe" expanded="True">
-                <Node name="UITests" expanded="True">
-                  <Node name="Tests" expanded="True">
-                    <Node name="Tests(Android)" expanded="True">
-                      <Node name="PlayGame" selected="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="TicTacToe" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
